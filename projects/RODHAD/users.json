@@ -1,0 +1,15 @@
+{
+  "admin": {
+    "password": "admin123",
+    "role": "soc_admin"
+  },
+  "service": {
+    "password": "svc@123",
+    "role": "service_account"
+  },
+  "analyst": {
+    "password": "analyst123",
+    "role": "soc_analyst"
+  }
+}
+

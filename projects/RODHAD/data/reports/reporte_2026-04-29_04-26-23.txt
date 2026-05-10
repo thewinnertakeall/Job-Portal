@@ -1,0 +1,4 @@
+RODHAD OS - REPORTE SIMULADO
+Fecha: 2026-04-29_04-26-23
+Evento: OBJETO_DETECTADO_ROBOT
+Nota: Modo simulación activo (Sin cámara física).

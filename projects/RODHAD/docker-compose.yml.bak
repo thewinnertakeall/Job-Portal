@@ -1,0 +1,42 @@
+services:
+  gateway:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - web
+      - auth-service
+
+  web:
+    build: ./src/web
+    environment:
+      - REACT_APP_GRAPHQL_URI=http://localhost/graphql
+
+  auth-service:
+    build: ./src/auth
+    environment:
+      - JWT_SECRET=${JWT_SECRET}
+      - DB_URL=postgresql://rodhad:pro_password@db:5432/rodhad
+
+  bi-service:
+    build: ./src/bi
+    environment:
+      - DB_URL=postgresql://rodhad:pro_password@db:5432/rodhad
+      - GLUCOSE_ALERT_HIGH=180
+      - GLUCOSE_ALERT_LOW=70
+    volumes:
+      - ./data:/app/data
+
+  db:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=rodhad
+      - POSTGRES_PASSWORD=pro_password
+      - POSTGRES_DB=rodhad
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

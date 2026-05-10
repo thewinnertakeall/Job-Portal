@@ -1,0 +1,71 @@
+=== REPORTE ISO 9001 ===
+Fecha:
+Thu Apr 23 15:00:48 -05 2026
+
+Usuario:
+administrador
+
+Directorio actual:
+/home/administrador/projects/RODHAD
+
+Tiempo activo del sistema:
+ 15:00:48 up 9 min,  0 user,  load average: 0.08, 0.71, 0.72
+
+Uso de disco:
+Filesystem      Size  Used Avail Use% Mounted on
+none            2.9G     0  2.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            2.9G  4.0K  2.9G   1% /mnt/wsl
+drivers         476G  318G  159G  67% /usr/lib/wsl/drivers
+/dev/sde       1007G   41G  916G   5% /
+none            2.9G   96K  2.9G   1% /mnt/wslg
+none            2.9G     0  2.9G   0% /usr/lib/wsl/lib
+rootfs          2.9G  2.7M  2.9G   1% /init
+none            2.9G 1000K  2.9G   1% /run
+none            2.9G     0  2.9G   0% /run/lock
+none            2.9G  1.1M  2.9G   1% /run/shm
+none            2.9G   76K  2.9G   1% /mnt/wslg/versions.txt
+none            2.9G   76K  2.9G   1% /mnt/wslg/doc
+C:\             476G  318G  159G  67% /mnt/c
+tmpfs           2.9G     0  2.9G   0% /run/qemu
+snapfuse         92M   92M     0 100% /snap/gtk-common-themes/1535
+snapfuse         74M   74M     0 100% /snap/core22/2411
+snapfuse        128K  128K     0 100% /snap/bare/5
+snapfuse        532M  532M     0 100% /snap/gnome-42-2204/247
+snapfuse         49M   49M     0 100% /snap/snapd/26382
+snapfuse         73M   73M     0 100% /snap/multipass/16926
+snapfuse         50M   50M     0 100% /snap/snapd/26865
+
+Uso de memoria:
+               total        used        free      shared  buff/cache   available
+Mem:            5803         777        4004          18        1193        5026
+Swap:           4096           0        4096
+
+Procesos activos (top 5):
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+mongodb      579  1.7  2.6 571276 156288 ?       Ssl  14:51   0:09 /usr/bin/mongod --config /etc/mongod.conf
+root         606  0.4  1.6 2237124 100960 ?      Ssl  14:51   0:02 /snap/multipass/16926/bin/multipassd --verbosity debug --logger platform
+root         794  0.2  1.4 1989080 84904 ?       Ssl  14:51   0:01 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root         631  0.3  0.7 1940916 47360 ?       Ssl  14:51   0:01 /usr/bin/containerd
+root        1480  0.4  0.6 1998492 41592 ?       Ssl  14:52   0:02 /snap/snapd/current/usr/lib/snapd/snapd
+
+Estado del proyecto (archivos):
+total 72K
+drwxr-xr-x 2 administrador administrador 4.0K Mar 23 02:50 __pycache__
+drwxr-xr-x 3 administrador administrador 4.0K Mar 22 23:12 app
+drwxr-xr-x 7 administrador administrador 4.0K Mar 22 22:24 brain-server
+drwxr-xr-x 4 administrador administrador 4.0K Mar 22 18:47 cognitive_services
+drwxr-xr-x 3 administrador administrador 4.0K Mar 21 01:30 dcos
+-rw-r--r-- 1 administrador administrador 5.3K Mar 23 02:57 index.html
+drwxr-xr-x 3 administrador administrador 4.0K Mar 22 22:58 infrastructure
+-rw-r--r-- 1 administrador administrador  821 Mar 23 02:56 main.py
+-rw-r--r-- 1 administrador administrador 2.4K Apr 23 15:00 reporte_2026-04-23_15-00-48.txt
+-rwxr-xr-x 1 administrador administrador  748 Apr 23 15:00 reporte_iso.sh
+-rw-r--r-- 1 administrador administrador  142 Mar 21 03:45 requirements.txt
+drwxr-xr-x 3 administrador administrador 4.0K Mar 21 01:31 ros2_ws
+drwxr-xr-x 2 administrador administrador 4.0K Mar 22 22:56 scripts
+drwxr-xr-x 3 administrador administrador 4.0K Mar 22 22:33 src
+drwxr-xr-x 2 administrador administrador 4.0K Mar 25 05:08 static
+drwxr-xr-x 2 administrador administrador 4.0K Mar 25 05:08 templates
+drwxr-xr-x 5 administrador administrador 4.0K Mar 23 02:48 venv
+
+=== FIN DEL REPORTE ===
